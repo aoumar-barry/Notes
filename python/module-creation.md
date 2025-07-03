@@ -12,6 +12,21 @@ readme = "README.md"
 license = {text = "MIT"}
 dependencies = []
 
+[project.optional-dependencies]
+dev = [
+    "black",
+    "pytest",
+    "mypy"
+]
+docs = [
+    "mkdocs",
+    "mkdocs-material"
+]
+tool = [
+    "some-tool-package",
+    "another-tool-lib"
+] 
+
 [project.urls]
 Homepage = "https://github.com/yourname/my_module"
 ```

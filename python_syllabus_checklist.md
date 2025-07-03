@@ -63,7 +63,7 @@
 
 ## 🌐 Module 11: Libraries and Environments
 - [x] `pip` and Package Management
-- [] Popular Libraries (`requests`, `numpy`, etc.)
+- [x] Popular Libraries (`requests`, `numpy`, etc.)
 - [x] Virtual Environments with `venv`
 
 ## 🕸️ Module 12: Web Development Basics
