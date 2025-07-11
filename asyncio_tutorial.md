@@ -14,14 +14,14 @@ It is ideal for:
 
 ## 🧠 Core Concepts
 
-| Concept     | Description |
-|-------------|-------------|
-| `coroutine` | A special function you define with `async def`, that can be paused/resumed with `await` |
-| `await`     | Waits for a coroutine to finish and gives control back to the event loop |
-| `event loop`| The engine that executes asynchronous tasks |
-| `Task`      | A wrapper for a coroutine that lets it run concurrently |
-| `gather()`  | Runs multiple coroutines concurrently and waits for all |
-| `create_task()` | Schedules execution of a coroutine |
+| Concept         | Description                                                                             |
+| --------------- | --------------------------------------------------------------------------------------- |
+| `coroutine`     | A special function you define with `async def`, that can be paused/resumed with `await` |
+| `await`         | Waits for a coroutine to finish and gives control back to the event loop                |
+| `event loop`    | The engine that executes asynchronous tasks                                             |
+| `Task`          | A wrapper for a coroutine that lets it run concurrently                                 |
+| `gather()`      | Runs multiple coroutines concurrently and waits for all                                 |
+| `create_task()` | Schedules execution of a coroutine                                                      |
 
 ---
 
@@ -165,24 +165,24 @@ asyncio.run(main())
 
 ## ⛔ Common Pitfalls
 
-| Problem                        | Fix |
-|-------------------------------|-----|
+| Problem                              | Fix                                       |
+| ------------------------------------ | ----------------------------------------- |
 | `RuntimeError: Event loop is closed` | Use `asyncio.run()` only once per program |
-| `await` outside async function | Use `await` only inside `async def` |
-| Blocking code (e.g. `time.sleep`) | Replace with `await asyncio.sleep()` |
+| `await` outside async function       | Use `await` only inside `async def`       |
+| Blocking code (e.g. `time.sleep`)    | Replace with `await asyncio.sleep()`      |
 
 ---
 
 ## 📦 Useful asyncio APIs Summary
 
-| Function / Class         | Description |
-|--------------------------|-------------|
-| `asyncio.run(coro)`      | Run a coroutine |
-| `await asyncio.sleep()`  | Non-blocking delay |
-| `asyncio.gather(*coros)` | Run multiple coroutines concurrently |
-| `asyncio.create_task()`  | Schedule coroutine to run concurrently |
-| `asyncio.get_event_loop()` | Get the current event loop |
-| `asyncio.Queue()`        | Thread-safe producer/consumer queue |
+| Function / Class           | Description                            |
+| -------------------------- | -------------------------------------- |
+| `asyncio.run(coro)`        | Run a coroutine                        |
+| `await asyncio.sleep()`    | Non-blocking delay                     |
+| `asyncio.gather(*coros)`   | Run multiple coroutines concurrently   |
+| `asyncio.create_task()`    | Schedule coroutine to run concurrently |
+| `asyncio.get_event_loop()` | Get the current event loop             |
+| `asyncio.Queue()`          | Thread-safe producer/consumer queue    |
 
 ---
 

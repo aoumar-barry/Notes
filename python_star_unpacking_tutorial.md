@@ -126,11 +126,11 @@ print(result)  # [0, 1, 2, 3, 4]
 
 ## 📌 Summary Table
 
-| Syntax        | Meaning |
-|---------------|---------|
-| `*args`       | Collects extra positional arguments |
-| `**kwargs`    | Collects extra keyword arguments |
-| `*` (call)    | Unpacks list/tuple into separate arguments |
-| `**` (call)   | Unpacks dict into named keyword arguments |
-| `*` (signature)| Forces keyword-only parameters |
+| Syntax          | Meaning                                    |
+| --------------- | ------------------------------------------ |
+| `*args`         | Collects extra positional arguments        |
+| `**kwargs`      | Collects extra keyword arguments           |
+| `*` (call)      | Unpacks list/tuple into separate arguments |
+| `**` (call)     | Unpacks dict into named keyword arguments  |
+| `*` (signature) | Forces keyword-only parameters             |
 
